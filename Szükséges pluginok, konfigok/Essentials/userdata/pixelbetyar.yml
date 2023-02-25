@@ -1,0 +1,22 @@
+uuid: 9ecd3ccd-24bf-3d38-aebf-6606fcdaf420
+timestamps:
+  login: 1410426916878
+  lastteleport: 1410427862372
+  logout: 1410427902019
+ipAddress: 25.118.181.134
+lastlocation:
+  world: CTF-MAP_The-Office
+  x: 173.1699768331249
+  y: 103.0
+  z: 148.73922780539738
+  yaw: -33.15
+  pitch: 62.999992
+money: '11150.0'
+logoutlocation:
+  world: PVP
+  x: 1293.2862250453297
+  y: 92.5
+  z: -504.8767844512711
+  yaw: -248.09984
+  pitch: 24.899984
+afk: false

@@ -1,0 +1,20 @@
+uuid: b669936b-8521-3fde-bf40-445e0e7ca01b
+timestamps:
+  login: 1409082966375
+  lastteleport: 1409082843652
+  logout: 1404294629346
+ipAddress: 25.118.181.134
+lastlocation:
+  world: TTT_SkyBowl
+  x: 296.49521515330804
+  y: 124.0
+  z: -283.3920194417632
+  yaw: -359.25006
+  pitch: 39.74999
+logoutlocation:
+  world: PVP
+  x: 1288.7469235187602
+  y: 92.5
+  z: -505.4723563439149
+  yaw: -251.09126
+  pitch: 18.51601

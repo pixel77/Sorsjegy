@@ -1,0 +1,29 @@
+uuid: 34f95b99-e338-3ec5-976e-2f6e65fcae9a
+timestamps:
+  login: 1409476973365
+  lastteleport: 1409476578784
+  kits:
+    csoro: 1409475200675
+    norris: 1409475391776
+    color: 1400956900519
+    monstern: 1400617423055
+    pro: 1409474095927
+    termeszetjaro: 1409475077076
+    gazdag: 1400529030003
+  logout: 1409476087716
+ipAddress: 25.64.5.51
+lastlocation:
+  world: PVP
+  x: 358.8368733528069
+  y: 125.0
+  z: -285.2450839302875
+  yaw: -320.24997
+  pitch: 14.400008
+logoutlocation:
+  world: PVP
+  x: 1294.0
+  y: 92.0
+  z: -508.0
+  yaw: 0.0
+  pitch: 0.0
+money: '100'

@@ -1,0 +1,34 @@
+uuid: e1f1612c-e932-3942-a8df-a0db030e3d56
+timestamps:
+  login: 1402856936308
+  lastteleport: 1401304270543
+  kits:
+    csoro: 1399834598077
+    tűzoltó: 1400871780019
+    norris: 1399834730325
+    kem: 1400872718620
+    firework: 1399834814277
+    color: 1400872159072
+    monstern: 1400869848520
+    projelolt: 1400959298866
+    pro: 1400959222768
+    indian: 1400873410649
+    assasin: 1399834916877
+    termeszetjaro: 1400008574971
+  logout: 1402857968723
+ipAddress: 25.141.251.86
+lastlocation:
+  world: PVP
+  x: 1398.6910155727576
+  y: 47.95002702008744
+  z: -496.68853783076037
+  yaw: -241.3529
+  pitch: -20.591518
+logoutlocation:
+  world: PVP
+  x: 1263.6260548357548
+  y: 36.0
+  z: -399.7976665009658
+  yaw: -188.16034
+  pitch: 12.450053
+money: '999900'

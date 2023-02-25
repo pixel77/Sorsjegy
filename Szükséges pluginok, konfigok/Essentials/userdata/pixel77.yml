@@ -1,0 +1,29 @@
+uuid: d4ca3877-63b7-3241-ba14-3d2e0c35c07f
+timestamps:
+  login: 1410698791134
+  lastteleport: 1410433534386
+  kits:
+    lol: 1408824567243
+    csoro: 1409476754743
+    norris: 1408824382793
+    pornepsepro: 1408824666093
+    titan: 1408824675293
+    monstern: 1408824751444
+  logout: 1410434068815
+ipAddress: 25.118.181.134
+lastlocation:
+  world: PVP
+  x: 1298.9674519638636
+  y: 12.0
+  z: -497.41488485487383
+  yaw: -3.2989163
+  pitch: 83.099976
+money: '11000.0'
+logoutlocation:
+  world: PVP
+  x: 1295.3311497470843
+  y: 92.0
+  z: -504.6597595458838
+  yaw: 50.549717
+  pitch: 6.1500125
+afk: false

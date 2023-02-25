@@ -1,0 +1,35 @@
+uuid: 6b5539df-07fc-330c-a519-7bed6985f2f6
+timestamps:
+  login: 1409476972332
+  lastteleport: 1409477001066
+  logout: 1409475133221
+  kits:
+    lol: 1409473062703
+    monstern: 1405063004963
+    assasin: 1405194144759
+    vasember: 1409475741778
+    gazdag: 1405194945559
+    csoro: 1409475425426
+    norris: 1409473855127
+    hetikit: 1405016532765
+    titan: 1409473558303
+    color: 1405021785113
+    projelolt: 1405021745464
+    pro: 1405194419709
+    gladiator: 1409474084127
+ipAddress: 25.217.6.38
+lastlocation:
+  world: TTT_skybowl
+  x: 284.0
+  y: 124.0
+  z: -283.0
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: PVP
+  x: 1294.0
+  y: 92.0
+  z: -508.0
+  yaw: 0.0
+  pitch: 0.0
+money: '114430.0'

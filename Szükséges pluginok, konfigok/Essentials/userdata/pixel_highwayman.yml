@@ -1,0 +1,30 @@
+uuid: dccf1dc6-35cf-3901-9c91-7e1dc433b0d9
+timestamps:
+  login: 1508868901497
+  logout: 1508862984900
+  lastteleport: 1508862978405
+  kits:
+    monstern: 1499435412827
+    lol: 1497861165909
+    nagyugras: 1499439588076
+    pornepsepro: 1499435496278
+    pro: 1497859625911
+    aranysorsjegy: 1508868972125
+    norris: 1504272174472
+ipAddress: 127.0.0.1
+logoutlocation:
+  world: PVP
+  x: 1285.314684189167
+  y: 121.0
+  z: -493.9334018868319
+  yaw: -315.9269
+  pitch: 39.807457
+lastlocation:
+  world: PVP
+  x: 1294.5666276641084
+  y: 92.0
+  z: -506.6588295725478
+  yaw: -177.1659
+  pitch: 5.9363303
+money: '9999999998875.0'
+afk: false

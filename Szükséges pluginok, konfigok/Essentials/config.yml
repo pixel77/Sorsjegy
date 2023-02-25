@@ -1,0 +1,875 @@
+# Note: The blacklist above will be ignored then.
+# Example permissions (these go in your permissions manager):
+#  - essentials.itemspawn.item-all
+#  - essentials.itemspawn.item-[itemname]
+#  - essentials.itemspawn.item-[itemid]
+#  - essentials.give.item-all
+#  - essentials.give.item-[itemname]
+#  - essentials.give.item-[itemid]
+#  - essentials.unlimited.item-all
+#  - essentials.unlimited.item-[itemname]
+#  - essentials.unlimited.item-[itemid]
+#  - essentials.unlimited.item-bucket # Unlimited liquid placing
+#
+# For more information, visit http://wiki.ess3.net/wiki/Command_Reference/ICheat#Item.2FGive
+permission-based-item-spawn: false
+
+# Mob limit on the /spawnmob command per execution.
+spawnmob-limit: 10
+
+# Shall we notify users when using /lightning?
+warn-on-smite: true
+
+# motd and rules are now configured in the files motd.txt and rules.txt.
+
+# When a command conflicts with another plugin, by default, Essentials will try to force the OTHER plugin to take priority.
+# Commands in this list, will tell Essentials to 'not give up' the command to other plugins.
+# In this state, which plugin 'wins' appears to be almost random.
+#
+# If you have two plugin with the same command and you wish to force Essentials to take over, you need an alias.
+# To force essentials to take 'god' alias 'god' to 'egod'.
+# See http://wiki.bukkit.org/Bukkit.yml#aliases for more information
+
+overridden-commands:
+#  - god
+#  - info
+
+# Disabling commands here will prevent Essentials handling the command, this will not affect command conflicts.
+# Commands should fallback to the vanilla versions if available.
+# You should not have to disable commands used in other plugins, they will automatically get priority.
+disabled-commands:
+#  - nick
+#  - clear
+
+# These commands will be shown to players with socialSpy enabled.
+# You can add commands from other plugins you may want to track or
+# remove commands that are used for something you dont want to spy on.
+socialspy-commands:
+  - msg
+  - w
+  - r
+  - mail
+  - m
+  - t
+  - whisper
+  - emsg
+  - tell
+  - er
+  - reply
+  - ereply
+  - email
+  - action
+  - describe
+  - eme
+  - eaction
+  - edescribe
+  - etell
+  - ewhisper
+  - pm
+
+# If you do not wish to use a permission system, you can define a list of 'player perms' below.
+# This list has no effect if you are using a supported permissions system.
+# If you are using an unsupported permissions system, simply delete this section.
+# Whitelist the commands and permissions you wish to give players by default (everything else is op only).
+# These are the permissions without the "essentials." part.
+player-commands:
+  - afk
+  - afk.auto
+  - back
+  - back.ondeath
+  - balance
+  - balance.others
+  - balancetop
+  - build
+  - chat.color
+  - chat.format
+  - chat.shout
+  - chat.question
+  - clearinventory
+  - compass
+  - depth
+  - delhome
+  - getpos
+  - geoip.show
+  - help
+  - helpop
+  - home
+  - home.others
+  - ignore
+  - info
+  - itemdb
+  - kit
+  - kits.tools
+  - list
+  - mail
+  - mail.send
+  - me
+  - motd
+  - msg
+  - msg.color
+  - nick
+  - near
+  - pay
+  - ping
+  - protect
+  - r
+  - rules
+  - realname
+  - seen
+  - sell
+  - sethome
+  - setxmpp
+  - signs.create.protection
+  - signs.create.trade
+  - signs.break.protection
+  - signs.break.trade
+  - signs.use.balance
+  - signs.use.buy
+  - signs.use.disposal
+  - signs.use.enchant
+  - signs.use.free
+  - signs.use.gamemode
+  - signs.use.heal
+  - signs.use.info
+  - signs.use.kit
+  - signs.use.mail
+  - signs.use.protection
+  - signs.use.repair
+  - signs.use.sell
+  - signs.use.time
+  - signs.use.trade
+  - signs.use.warp
+  - signs.use.weather
+  - spawn
+  - suicide
+  - time
+  - tpa
+  - tpaccept
+  - tpahere
+  - tpdeny
+  - warp
+  - warp.list
+  - world
+  - worth
+  - xmpp
+
+# Note: All items MUST be followed by a quantity!
+# All kit names should be lower case, and will be treated as lower in permissions/costs.
+# Syntax: - itemID[:DataValue/Durability] Amount [Enchantment:Level].. [itemmeta:value]...
+# For Item meta information visit http://wiki.ess3.net/wiki/Item_Meta
+# 'delay' refers to the cooldown between how often you can use each kit, measured in seconds.
+# For more information, visit http://wiki.ess3.net/wiki/Kits
+kits:
+  color:
+    delay: 6000
+    items:
+      - 387 1 title:&4Book_&9o_&6Colors author:KHobbits lore:Ingame_color_codes book:Colors
+  tuzijatek:
+    delay: 6000
+    items:
+      - 401 1 name:Angry_Creeper color:red fade:green type:creeper power:1
+      - 401 1 name:Érdekes_éjjel color:yellow,orange fade:blue type:star effect:trail,twinkle power:1
+      - 401 2 name:Szeles_nap color:yellow,orange fade:red shape:large effect:twinkle color:yellow,orange fade:red shape:ball effect:trail color:red,purple fade:pink shape:star effect:trail power:1
+  segely:
+    delay: 25920000
+    items:
+      - 266 10
+      - 339 1 name:&bTipp:&b_Add_el_az_aranyrudat_a_spawnon!
+  kosorsjegy:
+    delay: 86400
+    items:
+      - 70 1 name:Sorsjegy
+  vassorsjegy:
+    delay: 86400
+    items:
+      - 148 1 name:Sorsjegy
+  aranysorsjegy:
+    delay: 86400
+    items:
+      - 147 1 name:Sorsjegy
+  nagyugras:
+    delay: 43200
+    items:
+      - 373 1 effect:jump power:4 duration:2 name:Egy_nagyobb_ugrás lore:Vigyázz!|Csak_2_mp-ig_jó!
+
+  csoro:
+    delay: 600
+    items:
+      - woodsword 1 fireaspect:1 knockback:4 alldamage:1 name:A_csórók_fegyvere
+      - 322 1 name:Sárgult_alma lore:A_kaja_életet_ad! 
+      - 373 1 effect:strong power:1 duration:30 effect:regeneration power:0 duration:130 effect:nausea power:0 duration:60 name:Pálinka lore:Pálinkában_az_erő!|Erő_2_és_regeneráció|egy_kis_émelygéssel.
+      - 373:16397 1 effect:speed power:7 duration:6 name:Menekülés_palackja lore:Futás_közben_dobd_magadra|a_szuper_gyursaságért!1
+      - 298:60 1 unbreaking:1 name:Szakadt_sapka
+      - 299:10 1 unbreaking:1 name:Menő_póló color:26,255,0
+      - 300:60 1 unbreaking:1 name:Szakadt_nadrág
+      - 301:60 1 unbreaking:2 name:Szakadt_cipő lore:Már_majdnem_MezitNike
+  assasin:
+    delay: 480
+    items:
+      - 272 1 name:Hidden_Blade
+      - 373 1 effect:strong power:0 duration:240 effect:speed power:1 duration:240 effect:jump power:2 duration:240 name:Assasinok_családi_itala lore:Ettől_igazi_assasin_lehetsz!|Erő_és_gyoraság_I|magasugrás_II-vel_4_percig.
+      - 373 1 effect:invisible power:1 duration:180 effect:speed power:1 duration:180 name:Rejtőzködés_főzete lore:Kiváló_megfigyelésre|vagy_elrejtőzésre.|Csak_ruha_nélkül_használd!
+      - 298 1 name:Assasin_kapucni color:255,255,255
+      - 299 1 name:Assasin_póló color:255,255,255
+      - 300 1 name:Assasin_nadrág color:255,255,255
+      - 301 1 name:Assasin_cipő color:255,255,255
+  favago:
+    delay: 600
+    items:
+      - 258 1 alldamage:1 name:A_favágó_fegyvere
+      - 297 10 name:Elemózsia
+      - 373 1 effect:blindness power:1 duration:15 effect:regeneration power:1 duration:150 effect:strong power:4 duration:3 name:Feles
+      - 373 1 effect:strong power:1 duration:50 effect:healthboost power:1 duration:25 effect:heal power:1 duration:1 name:Favágók_ereje
+      - 298 1 protection:1 name:Favágó_sapka lore:Megvég,_ha|ráddőlne_a_fa. color:26,153,0
+      - 303 1 protection:1 color:51,153,0 name:Póló
+      - 300 1 color:51,153,0 name:Nadrág
+      - 301 1 featherfalling:2 name:Favágó_cipő lore:Megvég,_ha|leesnél_a_fától. color:26,153,0
+  termeszetjaro:
+    delay: 600
+    items:
+      - 349:2 1 fireaspect:1 knockback:1 alldamage:6 name:A_halak_ereje
+      - 332 32 name:A_snowgolem_fegyvere
+      - 373:8262 1 name:Éjjeli_mobok_ereje
+      - 373:8195 1 effect:waterbreath power:1 duration:180 effect:fireresist power:1 duration:60 name:A_tintahalak_ereje
+      - 373:16482 1 effect:speed power:2 duration:120 name:A_malacok_ereje
+      - 299 1 fireprotection:4 name:Bőr:_A_tehenek_ajándéka
+      - 309 1 featherfalling:8 name:A_csirkék_ereje
+      - 296 60 name:Gabona:_A_természet_ajándéka lore:Tipp:|Csinálj_belőle_kenyeret
+  indian:
+    delay: 7200
+    items:
+      - 298 1 projectileprotection:1 name:Tollas_sapka color:184,138,0
+      - 299 1 unbreaking:1 name:Csukma color:184,138,0
+      - 300 1 protection:1 name:Nadrág color:184,138,0
+      - 301 1 featherfalling:1 name:Csizma color:184,138,0
+      - 373:16385 8 name:Indián_erő-LV1 effect:strong power:1 duration:4 effect:speed power:1 duration:4 effect:jump power:2 duration:4
+      - 373:16393 4 name:Indián_erő-LV2 effect:strong power:1 duration:8 effect:speed power:1 duration:8 effect:jump power:2 duration:8
+      - 373 2 name:Indián_erő-LV3 effect:strong power:2 duration:10 effect:speed power:2 duration:10 effect:jump power:4 duration:10
+      - 373:16452 2 name:Indián_méreg effect:poison power:1 duration:6
+      - 261 1 name:Indián_fegyver
+      - 262 32 name:Eredeti_házi_nyíl
+      - stonesword 1 name:Kés
+  projelolt:
+    delay: 432000
+    items:
+      - 310 1 name:&eProjelöltek_sapkája&e
+      - 311 1 name:&eProjelöltek_mellvértje&e
+      - 312 1 name:&eProjelöltek_lábszárvédője&e
+      - 313 1 name:&eProjelöltek_cipője&e
+      - diamondsword 1 name:&eProjelöltek_kardja&e
+      - 261 1 name:&4[Íj]&4
+      - 262 32 name:&4[Nyíl]&4
+      - 368 1 name:&4Az_End_ereje&4
+      - 384 20 name:&6[XP]&6
+  Gladiator:
+    delay: 604800
+    items:
+      - 310 1 
+      - 311 1 
+      - 312 1
+      - 313 1
+      - diamondsword alldmg:1 1 name:&4{USERNAME}&4_&4Halálosztó_kardja&4
+      - 261 1 name:&e[Íly]&e
+      - 262 32 name:&e[Nyíl]&e
+      - 368 1 name:&bAz_End_ereje&b
+      - 384 32 name:&e[XP]&e
+
+  nepsepro:
+    delay: 7200
+    items:
+      - 268:1 1 alldamage:6 fireaspect:1 knockback:1 Smite:1 bneofarthropods:2 looting:1 unbreaking:2 name:&e{PLAYER}&e_&bTitikos_állami_kisérletes_közelharci_fegyvere&b lore:Az_állambácsitól_kaptad!|Vigyázz_rá!!!|:)
+      - 298:10 1 unbreaking:1 fireprotection:1 respiration:3 aquaaffinity:1 projectileprotection:2 name:Notch_sapkája lore:Vigyázz_rád,_hogy|ne_veszísd_el_a_fejed!
+      - 303:10 1 fireprotection:3 protection:2 name:&c&lPankiX&l&c_mellvértje lore:PankiX_ereje_veled_van color:255,0,51
+      - 300:10 1 unbreaking:3 fireprotection:1 blastprotection:3 lore:Ez_csak_egy_sima_bőrlábszárvédő!
+      - 301:10 1 unbreaking:2 depthstrider:3 featherfalling:4 lore:Ez_csak_egy_sima_bőrcsizma!
+      - 261:50 1 punch:2 power:1 unbreaking:1 name:&e{PLAYER}&e_&bTitikos_állami_kisérletes_távolsági_fegyvere
+      - 262 20 flame:1 name:&e{PLAYER}&e_&bLőszere
+      - 371 9
+      - 387 1 title:Olvasd_el! author:Pixelbetyar lore:Ez_egy_tipp! book:Nepseprokit
+  gazdag:
+    delay: 600
+    items:
+      - 283 1 alldmg:3 unbreaking:3 name:A_pénz_hatalma lore:A_kezedben_a_pénz_hatalma
+      - 314 1 name:DC_sapka unbreaking:2 protection:1
+      - 315 1 name:Convers_póló unbreaking:2 protection:1 
+      - 316 1 name:Adidas_nadrág unbreaking:2 protection:1 
+      - 313 1 name:Nike_csuka unbreaking:2 protection:1 
+      - 373:8265 1 name:Gazdagok_itala effect:strong power:1 duration:360 effect:regeneration power:1 duration:180 effect:fireresist power:1 duration:120 effect:speed power:1 duration:60
+      - 260 10
+      - 322 6 name:Tehetősek_almája lore:Tipp:|Miután_az_italt_megittad|3_percig_ne_egyél_belőle.
+
+  monstern:
+    delay: 900
+    items:
+      - 256 1 knockback:1 alldmg:3 name:&2Zombi&2_kard
+      - 261 1 name:Skeleton_fegyver
+      - 262 20
+      - 368 8 name:Endermen_erő
+      - 373:8262 1 name:Éjjeli_mobok_ereje
+      - 373:16482 1 effect:speed power:1 duration:90 effect:jump power:2 duration:180 name:Pókember_itala
+      - 302 1 projectileprotection:6 name:Skeleton_erő
+      - 315 1 unbreaking:1 protection:1 thors:2 name:Tüskés_védelem
+      - 316 1 unbreaking:3 name:&2Zombi&2_nadrág
+      - 317 1 featherfalling:2 unbreaking:2 depthstrider:3 name:&2Zombi&2_cipő_pókerővel
+
+  norris:
+    delay: 7200
+    items:
+      - 267:201 1 unbreaking:2 smite:1 alldamage:2 fireaspect:1 name:&e{USERNAME}&e_kardja_Chuck_Norristól lore:Chuck_Norris_közbenjárására|miadt_ez_a_régi_kard|kb._még_150_ütést_kibír.
+      - 261:200 1 flame:1 unbreaking:1 name:Chuck_Norris_tűzszórója
+      - 373 1 effect:strong power:4 duration:12 effect:healthboost power:3 duration:120 effect:absorption power:6 duration:120 effect:heal power:2 duration:10 effect:fireresist power:0 duration:240 name:Chuck_Norris_reggelije lore:Ezzel_igazi_hős_lehetsz.
+      - 373 1 effect:speed power:1 duration:120 effect:jump power:1 duration:120 name:Parkour_leves lore:Ezzel_igazi_menő|parkour-os_lehetsz.
+      - 373:16397 1 effect:nausea power:2 duration:120 effect:slowness power:0 duration:60 name:Pörgőrugás lore:Ez_megszédíti_az_ellenfelet.
+      - 373 1 effect:nausea power:3 duration:1 effect:slowness power:2 duration:1 effect:regeneration power:0 duration:6 name:Pörgőrugás_ellenszere lore:Ha_esetleg_magadat|is_megrugtad_:)_
+      - 373:16452 1 effect:wither power:1 duration:120 name:Chuck_Norris_haragja 
+      - 373 1 effect:wither power:2 duration:1 effect:regeneration power:2 duration:30 name:Chuck_Norris_haragjának_lecsillapítója
+      - 322 20 name:A_természet_ajándéka lore:Ne_bántsd_a_természetett!
+      - 262 32 name:Chuck_Norris_tüzes_lehellete
+      - 306 1 projectileprotection:2 name:A_lövedékeltérítő
+      - 307 1 thorns:2 name:A_kardakasztó
+      - 308 1 protection:2 name:A_védő
+      - 309 1 featherfalling:2 name:Az_eséskönnyítő
+  vasember:
+    delay: 7200
+    items:
+      - 267:201 1 unbreaking:2 smite:1 alldamage:2 fireaspect:1 name:&e{USERNAME}&e_kardja_Chuck_Norristól lore:Chuck_Norris_közbenjárására|miadt_ez_a_régi_kard|kb._még_150_ütést_kibír.
+      - 261:200 1 flame:1 unbreaking:1 name:Chuck_Norris_tűzszórója
+      - 373 1 effect:strong power:4 duration:12 effect:healthboost power:3 duration:120 effect:absorption power:6 duration:120 effect:heal power:2 duration:10 effect:fireresist power:0 duration:240 name:Chuck_Norris_reggelije lore:Ezzel_igazi_hős_lehetsz.
+      - 373 1 effect:speed power:1 duration:120 effect:jump power:1 duration:120 name:Parkour_leves lore:Ezzel_igazi_menő|parkour-os_lehetsz.
+      - 373:16397 1 effect:nausea power:2 duration:120 effect:slowness power:0 duration:60 name:Pörgőrugás lore:Ez_megszédíti_az_ellenfelet.
+      - 373 1 effect:nausea power:3 duration:1 effect:slowness power:2 duration:1 effect:regeneration power:0 duration:6 name:Pörgőrugás_ellenszere lore:Ha_esetleg_magadat|is_megrugtad_:)_
+      - 373:16452 1 effect:wither power:1 duration:120 name:Chuck_Norris_haragja 
+      - 373 1 effect:wither power:2 duration:1 effect:regeneration power:2 duration:30 name:Chuck_Norris_haragjának_lecsillapítója
+      - 322 20 name:A_természet_ajándéka lore:Ne_bántsd_a_természetett!
+      - 262 32 name:Chuck_Norris_tüzes_lehellete
+      - 306 1 projectileprotection:2 name:A_lövedékeltérítő
+      - 307 1 thorns:2 name:A_kardakasztó
+      - 308 1 protection:2 name:A_védő
+      - 309 1 featherfalling:2 name:Az_eséskönnyítő
+
+  Titan:
+    delay: 7200
+    items:
+      - 267:201 1 unbreaking:2 smite:1 alldamage:2 fireaspect:1 name:&e{USERNAME}&e_kardja_Chuck_Norristól lore:Chuck_Norris_közbenjárására|miadt_ez_a_régi_kard|kb._még_150_ütést_kibír.
+      - 261:200 1 flame:1 unbreaking:1 name:Chuck_Norris_tűzszórója
+      - 373 1 effect:strong power:4 duration:12 effect:healthboost power:3 duration:120 effect:absorption power:6 duration:120 effect:heal power:2 duration:10 effect:fireresist power:0 duration:240 name:Chuck_Norris_reggelije lore:Ezzel_igazi_hős_lehetsz.
+      - 373 1 effect:speed power:1 duration:120 effect:jump power:1 duration:120 name:Parkour_leves lore:Ezzel_igazi_menő|parkour-os_lehetsz.
+      - 373:16397 1 effect:nausea power:2 duration:120 effect:slowness power:0 duration:60 name:Pörgőrugás lore:Ez_megszédíti_az_ellenfelet.
+      - 373 1 effect:nausea power:3 duration:1 effect:slowness power:2 duration:1 effect:regeneration power:0 duration:6 name:Pörgőrugás_ellenszere lore:Ha_esetleg_magadat|is_megrugtad_:)_
+      - 373:16452 1 effect:wither power:1 duration:120 name:Chuck_Norris_haragja 
+      - 373 1 effect:wither power:2 duration:1 effect:regeneration power:2 duration:30 name:Chuck_Norris_haragjának_lecsillapítója
+      - 322 20 name:A_természet_ajándéka lore:Ne_bántsd_a_természetett!
+      - 262 32 name:Chuck_Norris_tüzes_lehellete
+      - 306 1 projectileprotection:2 name:A_lövedékeltérítő
+      - 307 1 thorns:2 name:A_kardakasztó
+      - 308 1 protection:2 name:A_védő
+      - 309 1 featherfalling:2 name:Az_eséskönnyítő
+
+  pro:
+    delay: 86400
+    items:
+      - 310 1 unbreaking:1 name:&4{USERNAME}&4_&ePro&e_&bSapkája&b
+      - 311 1 protection:1 name:&4{USERNAME}&4_&ePro&e_&bMellvértje&b
+      - 312 1 unbreaking:1 name:&4{USERNAME}&4_&ePro&e_&bLábszárvédője&b
+      - 313 1 featherfalling:1 name:&4{USERNAME}&4_&ePro&e_&bCipője&b
+      - diamondsword 1 knockback:1 name:&4{USERNAME}&4_&ePro&e_&4Halálosztó_kardja&4
+      - 261 1 name:&4{USERNAME}&4_&ePro&e_&bÍja&b
+      - 262 32 name:&4{USERNAME}&4_&ePro&e_&bNyilai&b
+      - 368 2 name:&bAz_End_ereje&b
+      - 384 48 name:&4{USERNAME}&4_&ePro&e_&6XP-je&6
+      - 340 2 name:&4{USERNAME}&4_&ePro&e_&6Könyve&6 
+
+  pornepsepro:
+    delay: 21600
+    items:
+      - 268 1 alldamage:6 fireaspect:1 knockback:1 Smite:4 bneofarthropods:9 looting:1 unbreaking:2 name:&e{PLAYER}&e_&bSzupertitikos_állami_kisérletes_csúcsmodern_közelharci_fegyvere lore:Az_állambácsitól_kaptad!|Vigyázz_rá!!!|:)
+      - 298 1 unbreaking:3 fireprotection:1 respiration:5 aquaaffinity:1 projectileprotection:2 name:&eNotch&e_sapkája lore:Vigyázz_rád,_hogy|ne_veszísd_el_a_fejed!
+      - 303 1 unbreaking:1 fireprotection:4 protection:2 name:&c&lPankiX&l&c_mellvértje lore:PankiX_ereje_veled_van  color:255,0,51
+      - 300 1 unbreaking:5 fireprotection:1 blastprotection:5 lore:Ez_csak_egy_sima_bőrlábszárvédő!
+      - 301 1 unbreaking:3 fireprotection:1 depthstrider:3 featherfalling:8 name:Vasember_cipője
+      - 261 1 punch:5 power:1 unbreaking:1 flame:2 infinity:2 name:&e{PLAYER}&e_&bSzupertitikos_állami_kisérletes_csúcsmodern_távolsági_fegyvere&b
+      - 371 1
+      - 403 1 power:1
+      - 387 1 title:Olvasd_el! author:Pixelbetyar lore:Ez_egy_tipp! book:Pornepseprokit
+
+  LOL:
+    delay: 21600
+    items:
+      - 268 1 alldamage:6 fireaspect:1 knockback:1 Smite:4 bneofarthropods:9 looting:1 unbreaking:2 name:&e{PLAYER}&e_&bSzupertitikos_állami_kisérletes_csúcsmodern_közelharci_fegyvere lore:Az_állambácsitól_kaptad!|Vigyázz_rá!!!|:)
+      - 298 1 unbreaking:3 fireprotection:1 respiration:5 aquaaffinity:1 projectileprotection:2 name:&eNotch&e_sapkája lore:Vigyázz_rád,_hogy|ne_veszísd_el_a_fejed!
+      - 303 1 unbreaking:1 fireprotection:4 protection:2 name:&c&lPankiX&l&c_mellvértje lore:PankiX_ereje_veled_van  color:255,0,51
+      - 300 1 unbreaking:5 fireprotection:1 blastprotection:5 lore:Ez_csak_egy_sima_bőrlábszárvédő!
+      - 301 1 unbreaking:3 fireprotection:1 depthstrider:3 featherfalling:8 name:Vasember_cipője
+      - 261 1 punch:5 power:1 unbreaking:1 flame:2 infinity:2 name:&e{PLAYER}&e_&bSzupertitikos_állami_kisérletes_csúcsmodern_távolsági_fegyvere&b
+      - 371 1
+      - 403 1 power:1
+      - 387 1 title:Olvasd_el! author:Pixelbetyar lore:Ez_egy_tipp! book:Pornepseprokit
+
+# Essentials Sign Control
+# See http://wiki.ess3.net/wiki/Sign_Tutorial for instructions on how to use these.
+# To enable signs, remove # symbol. To disable all signs, comment/remove each sign.
+# Essentials Colored sign support will be enabled when any sign types are enabled.
+# Color is not an actual sign, it's for enabling using color codes on signs, when the correct permissions are given.
+
+enabledSigns:
+  - color
+  - balance
+  - buy
+  - sell
+  - trade
+  - free
+  - disposal
+  - warp
+  - kit
+  - mail
+  - enchant
+  - gamemode
+  - heal
+  - info
+  - spawnmob
+  - repair
+  - time
+  - weather
+
+# How many times per second can Essentials signs be interacted with per player.
+# Values should be between 1-20, 20 being virtually no lag protection.
+# Lower numbers will reduce the possibility of lag, but may annoy players.
+sign-use-per-second: 4
+
+# Backup runs a batch/bash command while saving is disabled.
+backup:
+  # Interval in minutes.
+  interval: 30
+  # Unless you add a valid backup command or script here, this feature will be useless.
+  # Use 'save-all' to simply force regular world saving without backup.
+  #command: 'rdiff-backup World1 backups/World1'
+
+# Set this true to enable permission per warp.
+per-warp-permission: false
+
+# Sort output of /list command by groups.
+# You can hide and merge the groups displayed in /list by defining the desired behaviour here.
+# Detailed instructions and examples can be found on the wiki: http://wiki.ess3.net/wiki/List
+list:
+    # To merge groups, list the groups you wish to merge
+    #Staff: owner admin moderator
+    Admins: owner admin
+    # To limit groups, set a max user limit
+    #builder: 20
+    # To hide groups, set the group as hidden
+    #default: hidden
+    # Uncomment the line below to simply list all players with no grouping
+    #Players: '*'
+
+# More output to the console.
+debug: false
+
+# Set the locale for all messages.
+# If you don't set this, the default locale of the server will be used.
+# For example, to set language to English, set locale to en, to use the file "messages_en.properties".
+# Don't forget to remove the # in front of the line.
+# For more information, visit http://wiki.ess3.net/wiki/Locale
+# locale: hu
+
+# Turn off god mode when people exit.
+remove-god-on-disconnect: false
+
+# Auto-AFK
+# After this timeout in seconds, the user will be set as afk.
+# This feature requires the player to have essentials.afk.auto node.
+# Set to -1 for no timeout.
+auto-afk: 300
+
+# Auto-AFK Kick
+# After this timeout in seconds, the user will be kicked from the server.
+# essentials.afk.kickexempt node overrides this feature.
+# Set to -1 for no timeout.
+auto-afk-kick: -1
+
+# Set this to true, if you want to freeze the player, if he is afk.
+# Other players or monsters can't push him out of afk mode then.
+# This will also enable temporary god mode for the afk player.
+# The player has to use the command /afk to leave the afk mode.
+freeze-afk-players: false
+
+# When the player is afk, should he be able to pickup items?
+# Enable this, when you don't want people idling in mob traps.
+disable-item-pickup-while-afk: false
+
+# This setting controls if a player is marked as active on interaction.
+# When this setting is false, you will need to manually un-AFK using the /afk command.
+cancel-afk-on-interact: true
+
+# Should we automatically remove afk status when the player moves?
+# Player will be removed from AFK on chat/command regardless of this setting.
+# Disable this to reduce server lag.
+cancel-afk-on-move: true
+
+# You can disable the death messages of Minecraft here.
+death-messages: true
+
+# Should operators be able to join and part silently.
+# You can control this with permissions if it is enabled.
+allow-silent-join-quit: false
+
+# You can set a custom join message here, set to "none" to disable.
+# You may use color codes, use {USERNAME} the player's name or {PLAYER} for the player's displayname.
+custom-join-message: "none"
+
+# You can set a custom quit message here, set to "none" to disable.
+# You may use color codes, use {USERNAME} the player's name or {PLAYER} for the player's displayname.
+custom-quit-message: "none"
+
+# Add worlds to this list, if you want to automatically disable god mode there.
+no-god-in-worlds:
+#  - world_nether
+
+# Set to true to enable per-world permissions for teleporting between worlds with essentials commands.
+# This applies to /world, /back, /tp[a|o][here|all], but not warps.
+# Give someone permission to teleport to a world with essentials.worlds.<worldname>
+# This does not affect the /home command, there is a separate toggle below for this.
+world-teleport-permissions: false
+
+# The number of items given if the quantity parameter is left out in /item or /give.
+# If this number is below 1, the maximum stack size size is given. If over-sized stacks.
+# are not enabled, any number higher than the maximum stack size results in more than one stack.
+default-stack-size: -1
+
+# Over-sized stacks are stacks that ignore the normal max stack size.
+# They can be obtained using /give and /item, if the player has essentials.oversizedstacks permission.
+# How many items should be in an over-sized stack?
+oversized-stacksize: 64
+
+# Allow repair of enchanted weapons and armor.
+# If you set this to false, you can still allow it for certain players using the permission.
+# essentials.repair.enchanted
+repair-enchanted: true
+
+# Allow 'unsafe' enchantments in kits and item spawning.
+# Warning: Mixing and overleveling some enchantments can cause issues with clients, servers and plugins.
+unsafe-enchantments: true
+
+#Do you want essentials to keep track of previous location for /back in the teleport listener?
+#If you set this to true any plugin that uses teleport will have the previous location registered.
+register-back-in-listener: false
+
+#Delay to wait before people can cause attack damage after logging in.
+login-attack-delay: 5
+
+#Set the max fly speed, values range from 0.1 to 1.0
+max-fly-speed: 0.8
+
+#Set the max walk speed, values range from 0.1 to 1.0
+max-walk-speed: 0.8
+
+#Set the maximum amount of mail that can be sent within a minute.
+mails-per-minute: 1000
+
+# Set the maximum time /tempban can be used for in seconds.
+# Set to -1 to disable, and essentials.tempban.unlimited can be used to override.
+max-tempban-time: -1
+
+############################################################
+# +------------------------------------------------------+ #
+# |                   EssentialsHome                     | #
+# +------------------------------------------------------+ #
+############################################################
+
+# Allows people to set their bed at daytime.
+update-bed-at-daytime: true
+
+# Set to true to enable per-world permissions for using homes to teleport between worlds.
+# This applies to the /home only.
+# Give someone permission to teleport to a world with essentials.worlds.<worldname>
+world-home-permissions: false
+
+# Allow players to have multiple homes.
+# Players need essentials.sethome.multiple before they can have more than 1 home.
+# You can set the default number of multiple homes using the 'default' rank below.
+# To remove the home limit entirely, give people 'essentials.sethome.multiple.unlimited'.
+# To grant different home amounts to different people, you need to define a 'home-rank' below.
+# Create the 'home-rank' below, and give the matching permission: essentials.sethome.multiple.<home-rank>
+# For more information, visit http://wiki.ess3.net/wiki/Multihome
+sethome-multiple:
+  default: 3
+  vip: 5
+  staff: 10
+
+# In this example someone with 'essentials.sethome.multiple' and 'essentials.sethome.multiple.vip' will have 5 homes.
+
+# Set timeout in seconds for players to accept tpa before request is cancelled.
+# Set to 0 for no timeout.
+tpa-accept-cancellation: 120
+
+############################################################
+# +------------------------------------------------------+ #
+# |                   EssentialsEco                      | #
+# +------------------------------------------------------+ #
+############################################################
+
+# For more information, visit http://wiki.ess3.net/wiki/Essentials_Economy
+
+# Defines the balance with which new players begin.  Defaults to 0.
+starting-balance: 150
+
+# worth-# defines the value of an item when it is sold to the server via /sell.
+# These are now defined in worth.yml
+
+# Defines the cost to use the given commands PER USE.
+# Some commands like /repair have sub-costs, check the wiki for more information.
+command-costs:
+  # /example costs $1000 PER USE
+  #example: 1000
+  # /kit tools costs $1500 PER USE
+  #kit-tools: 1500
+  kit-nepsepro: 2000
+
+# Set this to a currency symbol you want to use.
+currency-symbol: '$'
+
+# Set the maximum amount of money a player can have.
+# The amount is always limited to 10 trillion because of the limitations of a java double.
+max-money: 10000000000000
+
+# Set the minimum amount of money a player can have (must be above the negative of max-money).
+# Setting this to 0, will disable overdrafts/loans completely.  Users need 'essentials.eco.loan' perm to go below 0.
+min-money: 0
+
+# Enable this to log all interactions with trade/buy/sell signs and sell command.
+economy-log-enabled: false
+
+############################################################
+# +------------------------------------------------------+ #
+# |                   EssentialsHelp                     | #
+# +------------------------------------------------------+ #
+############################################################
+
+# Show other plugins commands in help.
+non-ess-in-help: true
+
+# Hide plugins which do not give a permission.
+# You can override a true value here for a single plugin by adding a permission to a user/group.
+# The individual permission is: essentials.help.<plugin>, anyone with essentials.* or '*' will see all help regardless.
+# You can use negative permissions to remove access to just a single plugins help if the following is enabled.
+hide-permissionless-help: true
+
+############################################################
+# +------------------------------------------------------+ #
+# |                   EssentialsChat                     | #
+# +------------------------------------------------------+ #
+############################################################
+
+chat:
+
+  # If EssentialsChat is installed, this will define how far a player's voice travels, in blocks.  Set to 0 to make all chat global.
+  # Note that users with the "essentials.chat.spy" permission will hear everything, regardless of this setting.
+  # Users with essentials.chat.shout can override this by prefixing text with an exclamation mark (!)
+  # Users with essentials.chat.question can override this by prefixing text with a question mark (?)
+  # You can add command costs for shout/question by adding chat-shout and chat-question to the command costs section."
+  radius: 0
+
+  # Chat formatting can be done in two ways, you can either define a standard format for all chat.
+  # Or you can give a group specific chat format, to give some extra variation.
+  # If set to the default chat format which "should" be compatible with ichat.
+  # For more information of chat formatting, check out the wiki: http://wiki.ess3.net/wiki/Chat_Formatting
+
+  format: '<{DISPLAYNAME}> {MESSAGE}'
+  #format: '&7[{GROUP}]&r {DISPLAYNAME}&7:&r {MESSAGE}'
+
+  group-formats:
+  #  Default: '{WORLDNAME} {DISPLAYNAME}&7:&r {MESSAGE}'
+  #  Admins: '{WORLDNAME} &c[{GROUP}]&r {DISPLAYNAME}&7:&c {MESSAGE}'
+
+  # If you are using group formats make sure to remove the '#' to allow the setting to be read.
+
+############################################################
+# +------------------------------------------------------+ #
+# |                 EssentialsProtect                    | #
+# +------------------------------------------------------+ #
+############################################################
+
+protect:
+
+  # General physics/behavior modifications.
+  prevent:
+    lava-flow: false
+    water-flow: false
+    water-bucket-flow: false
+    fire-spread: true
+    lava-fire-spread: true
+    flint-fire: false
+    lightning-fire-spread: true
+    portal-creation: false
+    tnt-explosion: false
+    tnt-playerdamage: false
+    tnt-minecart-explosion: false
+    tnt-minecart-playerdamage: false
+    fireball-explosion: false
+    fireball-fire: false
+    fireball-playerdamage: false
+    witherskull-explosion: false
+    witherskull-playerdamage: false
+    wither-spawnexplosion: false
+    wither-blockreplace: false
+    creeper-explosion: false
+    creeper-playerdamage: false
+    creeper-blockdamage: false
+    enderdragon-blockdamage: true
+    enderman-pickup: false
+    villager-death: false
+    # Monsters won't follow players.
+    # permission essentials.protect.entitytarget.bypass disables this.
+    entitytarget: false
+    # Prevent the spawning of creatures.
+    spawn:
+      creeper: false
+      skeleton: false
+      spider: false
+      giant: false
+      zombie: false
+      slime: false
+      ghast: false
+      pig_zombie: false
+      enderman: false
+      cave_spider: false
+      silverfish: false
+      blaze: false
+      magma_cube: false
+      ender_dragon: false
+      pig: false
+      sheep: false
+      cow: false
+      chicken: false
+      squid: false
+      wolf: false
+      mushroom_cow: false
+      snowman: false
+      ocelot: false
+      iron_golem: false
+      villager: false
+      wither: false
+      bat: false
+      witch: false
+      horse: false
+
+  # Maximum height the creeper should explode. -1 allows them to explode everywhere.
+  # Set prevent.creeper-explosion to true, if you want to disable creeper explosions.
+  creeper:
+    max-height: -1
+
+  # Disable various default physics and behaviors.
+  disable:
+    # Should fall damage be disabled?
+    fall: false
+
+    # Users with the essentials.protect.pvp permission will still be able to attack each other if this is set to true.
+    # They will be unable to attack users without that same permission node.
+    pvp: false
+
+    # Should drowning damage be disabled?
+    # (Split into two behaviors; generally, you want both set to the same value.)
+    drown: false
+    suffocate: false
+
+    # Should damage via lava be disabled?  Items that fall into lava will still burn to a crisp. ;)
+    lavadmg: false
+
+    # Should arrow damage be disabled?
+    projectiles: false
+
+    # This will disable damage from touching cacti.
+    contactdmg: false
+
+    # Burn, baby, burn!  Should fire damage be disabled?
+    firedmg: false
+
+    # Should the damage after hit by a lightning be disabled?
+    lightning: false
+
+    # Should Wither damage be disabled?
+    wither: false
+
+    # Disable weather options?
+    weather:
+      storm: false
+      thunder: false
+      lightning: false
+
+############################################################
+# +------------------------------------------------------+ #
+# |                EssentialsAntiBuild                   | #
+# +------------------------------------------------------+ #
+############################################################
+
+  # Disable various default physics and behaviors
+  # For more information, visit http://wiki.ess3.net/wiki/AntiBuild
+
+    # Should people with build: false in permissions be allowed to build?
+    # Set true to disable building for those people.
+    # Setting to false means EssentialsAntiBuild will never prevent you from building.
+    build: false
+
+    # Should people with build: false in permissions be allowed to use items?
+    # Set true to disable using for those people.
+    # Setting to false means EssentialsAntiBuild will never prevent you from using items.
+    use: false
+
+    # Should we tell people they are not allowed to build?
+    warn-on-build-disallow: true
+
+  # For which block types would you like to be alerted?
+  # You can find a list of IDs in plugins/Essentials/items.csv after loading Essentials for the first time.
+  # 10 = lava :: 11 = still lava :: 46 = TNT :: 327 = lava bucket
+  alert:
+    on-placement: 10,11,46,327
+    on-use: 327
+    on-break:
+
+  blacklist:
+
+    # Which blocks should people be prevented from placing?
+    placement: 10,11,46,327
+
+    # Which items should people be prevented from using?
+    usage: 327
+
+    # Which blocks should people be prevented from breaking?
+    break:
+
+    # Which blocks should not be pushed by pistons?
+    piston:
+
+    # Which blocks should not be dispensed by dispensers
+    dispenser:
+
+############################################################
+# +------------------------------------------------------+ #
+# |            Essentials Spawn / New Players            | #
+# +------------------------------------------------------+ #
+############################################################
+
+newbies:
+  # Should we announce to the server when someone logs in for the first time?
+  # If so, use this format, replacing {DISPLAYNAME} with the player name.
+  # If not, set to ''
+  #announce-format: ''
+  announce-format: '&dWelcome {DISPLAYNAME}&d to the server!'
+
+  # When we spawn for the first time, which spawnpoint do we use?
+  # Set to "none" if you want to use the spawn point of the world.
+  spawnpoint: newbies
+
+  # Do we want to give users anything on first join? Set to '' to disable
+  # This kit will be given regardless of cost, and permissions.
+  #kit: ''
+  kit: tools
+
+# Set this to lowest, if you want Multiverse to handle the respawning.
+# Set this to high, if you want EssentialsSpawn to handle the respawning.
+# Set this to highest, if you want to force EssentialsSpawn to handle the respawning.
+respawn-listener-priority: high
+
+# When users die, should they respawn at their first home or bed, instead of the spawnpoint?
+respawn-at-home: false
+
+# End of File <-- No seriously, you're done with configuration.

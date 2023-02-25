@@ -1,0 +1,35 @@
+uuid: 7ea1aa8c-c300-398e-ae44-4daba3f64a40
+timestamps:
+  login: 1407606796468
+  lastteleport: 1407607143062
+  logout: 1407607440718
+  kits:
+    csoro: 1407494573593
+    favago: 1407494734343
+    norris: 1398439682953
+    kem: 1398439857812
+    tools: 1398431697765
+    firework: 1398432014156
+    color: 1398431883265
+    svidler: 1407494716734
+    assasin: 1407494693281
+    dtools: 1398433013859
+    termeszetjaro: 1398431906328
+    notch: 1398431847328
+ipAddress: 25.136.87.23
+lastlocation:
+  world: PVP
+  x: 1294.5285614509637
+  y: 92.0
+  z: -507.5397864474795
+  yaw: -179.69897
+  pitch: -15.149999
+logoutlocation:
+  world: PVP_nether
+  x: 159.51062612475653
+  y: 88.0
+  z: -17.603637436043613
+  yaw: 232.05017
+  pitch: 9.149989
+money: '630'
+afk: false

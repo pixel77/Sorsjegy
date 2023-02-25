@@ -1,0 +1,36 @@
+uuid: b5fc73db-6f49-308c-a22f-0871d4b70204
+timestamps:
+  login: 1405194286206
+  lastteleport: 1405195240659
+  kits:
+    favago: 1405107139491
+    csoro: 1405107023240
+    norris: 1405194648659
+    hetikit: 1405107440166
+    kem: 1405194651558
+    color: 1405106984838
+    monstern: 1405107561201
+    projelolt: 1405107412215
+    pro: 1405194973359
+    indian: 1405107501847
+    nagyugras: 1405107337166
+    assasin: 1405107104091
+    termeszetjaro: 1405194824612
+    gazdag: 1405107543906
+  logout: 1405194278606
+ipAddress: 25.106.200.23
+lastlocation:
+  world: PVP
+  x: 1287.4190715062023
+  y: 12.0
+  z: -491.0033996806651
+  yaw: -263.25732
+  pitch: 90.0
+logoutlocation:
+  world: PVP
+  x: 1294.5285614509637
+  y: 92.0
+  z: -507.5397864474795
+  yaw: -179.69897
+  pitch: -15.149999
+money: '96900'

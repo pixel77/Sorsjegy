@@ -1,0 +1,24 @@
+uuid: 4512fd5c-f23c-3adc-a6da-d2ccd5b59cad
+timestamps:
+  login: 1410698823877
+  lastteleport: 1409083009124
+  logout: 1410434068815
+  kits:
+    csoro: 1409475819998
+ipAddress: 25.118.181.134
+lastlocation:
+  world: PVP
+  x: 1299.491047051128
+  y: 12.0
+  z: -498.1140793902245
+  yaw: -334.49918
+  pitch: 84.29995
+logoutlocation:
+  world: PVP
+  x: 1296.4339127443684
+  y: 92.5
+  z: -507.3627729535366
+  yaw: -78.29895
+  pitch: -6.45
+afk: false
+money: '19537.5'
